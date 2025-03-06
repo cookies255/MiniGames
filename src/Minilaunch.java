@@ -19,6 +19,10 @@ public class Minilaunch extends JFrame {
         chessButton.addActionListener(e -> new Chess());
         snakeLadderButton.addActionListener(e -> new SnakeLadder());
         pacManButton.addActionListener(e -> new PacMan());
+        pacManButton.addActionListener(e -> {
+            System.out.println("Pac-Man button clicked!"); // Debugging ke liye
+            new PacMan();
+        });
         spaceShooterButton.addActionListener(e -> new SpaceShooter());
         bubbleShooterButton.addActionListener(e -> new BubbleShooter());
 
